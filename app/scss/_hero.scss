@@ -1,0 +1,51 @@
+@use "functions" as *;
+@use "variables" as *;
+
+.section_hero {
+  width: 75vw;
+  text-align: center;
+  margin: auto;
+  padding-bottom: rem(100);
+  display: flex;
+
+  .hero__text {
+    text-align: left;
+    width: 50%;
+    margin-right: 2.5%;
+
+    h2 {
+      color: var(--hero-main);
+      font-size: rem(48);
+      margin-bottom: 0;
+    }
+
+    p {
+      color: var(--hero-secondary);
+      font-size: rem(18);
+    }
+
+    button {
+      background-color: var(--button-color);
+      color: var(--hero-main);
+      font-weight: 700;
+      border: none;
+      border-radius: rem(5);
+      padding: rem(10) rem(30);
+      cursor: pointer;
+    }
+  }
+
+  .hero__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    background-color: gray;
+    width: 50%;
+    margin-left: 2.5%;
+
+    p {
+      color: var(--hero-secondary);
+    }
+  }
+}

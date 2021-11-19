@@ -1,0 +1,39 @@
+@use "functions" as *;
+@use "variables" as *;
+
+.section_cta {
+  width: 75vw;
+  margin: 10vh auto;
+  background-color: var(--button-color);
+  border-radius: rem(5);
+
+  .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 100%;
+    gap: 20%;
+    margin: auto;
+    padding: rem(50);
+    color: var(--hero-main);
+
+    p {
+      margin: 0;
+    }
+
+    &__heading {
+      font-weight: 700;
+    }
+
+    &__button {
+      background-color: var(--button-color);
+      color: var(--hero-main);
+      border: rem(2) solid var(--hero-main);
+      border-radius: rem(5);
+      padding: rem(6) rem(25);
+      cursor: pointer;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+  }
+}

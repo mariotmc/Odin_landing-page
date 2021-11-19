@@ -1,0 +1,33 @@
+@use "functions" as *;
+@use "variables" as *;
+
+.header-hero_container {
+  background-color: var(--dark-bg);
+  padding-top: 2vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin: auto auto rem(100);
+  width: 75vw;
+  background-color: var(--dark-bg);
+
+  #logo {
+    font-size: rem(20);
+    font-weight: 700;
+    color: var(--hero-main);
+    margin-right: auto;
+  }
+
+  #link-one {
+    margin-left: auto;
+    color: var(--hero-secondary);
+  }
+
+  #link-two,
+  #link-three {
+    margin-left: rem(40);
+    color: var(--hero-secondary);
+  }
+}

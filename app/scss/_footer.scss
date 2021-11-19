@@ -1,0 +1,18 @@
+@use "functions" as *;
+@use "variables" as *;
+
+footer {
+  background-color: var(--dark-bg);
+
+  .footer-text {
+    width: 75vw;
+    margin: 0 auto;
+    padding: rem(35) 0;
+    text-align: center;
+    color: var(--hero-main);
+
+    p {
+      margin: 0;
+    }
+  }
+}

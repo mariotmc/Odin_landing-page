@@ -1,0 +1,30 @@
+@use "functions" as *;
+@use "variables" as *;
+
+.container_quote-section {
+  background-color: var(--quote-bg);
+
+  .section_quote {
+    width: 75vw;
+    margin: auto;
+    padding: rem(100) 0;
+
+    .container-quote {
+      width: 65vw;
+      margin: auto;
+
+      .quote {
+        font-size: rem(36);
+        font-style: italic;
+        margin: 0;
+      }
+
+      .author {
+        font-size: rem(20);
+        font-weight: 700;
+        text-align: right;
+        margin: 0;
+      }
+    }
+  }
+}
